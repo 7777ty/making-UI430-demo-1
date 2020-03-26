@@ -24,7 +24,7 @@
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
   },
-  "name": "430",
+  "name": "ui430",
   "description": "作者：7777ty",
   "version": "0.0.1",
   "main": "index.js",
