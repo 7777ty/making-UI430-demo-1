@@ -32,26 +32,25 @@
         .box{
             margin: 20px;
         }
-        .demoBox{
-            height: 50px;
+        .demo{
+
             background: grey;
-            border: 1px solid red;
+            border: 1px solid #666;
+            height:100px
         }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-row class="logo-search-qecode" >
-        <g-col span="4" class="demoBox" >
-            <g-row >123456789</g-row>
-        </g-col>
-        <g-col span="14" class="demoBox"> <g-row align="center">123456789</g-row></g-col>
-        <g-col span="6" class="demoBox"><g-row align="right">789</g-row></g-col>
+    <g-row>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
+        <g-col span="24" :ipad="{span:12}" :narrow-pc="{span:8}" ><div class="demo" ></div></g-col>
     </g-row>
-    <g-row gutter="10">
-        <g-col span="5" class="demoBox">5</g-col>
-        <g-col span="19" class="demoBox">19</g-col>
-    </g-row>
+
     <div class="box">
         <g-input value="张三" disabled></g-input>
         <g-input value="李四" readonly></g-input>
