@@ -1,4 +1,3 @@
-import Row from "../src/Row";
 
 const expect = chai.expect;
 import Vue from 'vue'
@@ -21,7 +20,7 @@ describe('Col', () => {
                 span:1
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('col-1')).to.eq(true);
         div.remove();
         vm.$destroy()
@@ -35,7 +34,7 @@ describe('Col', () => {
                 offset:1
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('offset-1')).to.eq(true);
         div.remove();
         vm.$destroy()
@@ -49,7 +48,7 @@ describe('Col', () => {
                 pc:{span:1,offset:2}
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('col-pc-1')).to.eq(true);
         expect(vm.$el.classList.contains('offset-pc-2')).to.eq(true);
         div.remove();
@@ -64,7 +63,7 @@ describe('Col', () => {
                 ipad:{span:1,offset:2}
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('col-ipad-1')).to.eq(true);
         expect(vm.$el.classList.contains('offset-ipad-2')).to.eq(true);
         div.remove();
@@ -79,7 +78,7 @@ describe('Col', () => {
                 narrowPc:{span:1,offset:2}
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('col-narrow-pc-1')).to.eq(true);
         expect(vm.$el.classList.contains('offset-narrow-pc-2')).to.eq(true);
         div.remove();
@@ -94,7 +93,7 @@ describe('Col', () => {
                 widePc:{span:1,offset:2}
             }
         }).$mount(div);
-        const element = vm.$el;
+
         expect(vm.$el.classList.contains('col-wide-pc-1')).to.eq(true);
         expect(vm.$el.classList.contains('offset-wide-pc-2')).to.eq(true);
         div.remove();
