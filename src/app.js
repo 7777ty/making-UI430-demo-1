@@ -35,20 +35,20 @@ new Vue({
         loading3: false,
     },
     created(){
-      this.$toast('很多文字',{
-          position:'middle',
-          closeButton:{
-           text:'知道了',
-              callback(toast){
-               toast.log();
-                  console.log('用户说他知道了');
-              }
-          }
-      })
+
     },
     methods:{
         showToast(){
-            this.$toast('我是message')
+            this.$toast('很多文字',{
+                position:'middle',
+                closeButton:{
+                    text:'知道了',
+                    callback(toast){
+                        toast.log();
+                        console.log('用户说他知道了');
+                    }
+                }
+            })
         }
     }
 });
