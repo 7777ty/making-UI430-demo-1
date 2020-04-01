@@ -29,33 +29,11 @@
         body {
             font-size: var(--font-size);
         }
-        .sider{
-            background: #333;
-            width: 200px;
-        }
-        .header{
-            background: #999999;
-            height: 100px;
-        }
-        .footer{
-            background: #cccccc;
-            height: 50px;
-        }
-
     </style>
 </head>
 <body>
 <div id="app">
-    <g-layout style="height: 100vh">
-        <g-header>header</g-header>
-        <g-layout>
-            <g-sider>sider</g-sider>
-            <g-content>content</g-content>
-            <g-sider>sider</g-sider>
-        </g-layout>
-
-        <g-footer>footer</g-footer>
-    </g-layout>
+   <button @click="showToast">toast</button>
 </div>
 
 <script src="./node_modules/vue/dist/vue.min.js"></script>

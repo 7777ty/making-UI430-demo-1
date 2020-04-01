@@ -6,7 +6,7 @@
 
 <script lang='ts'>
     export default {
-        name:'430sider'
+        name:'sider430'
     }
 
 </script>
