@@ -36,6 +36,7 @@ new Vue({
     },
     created(){
       this.$toast('很多文字',{
+          position:'middle',
           closeButton:{
            text:'知道了',
               callback(toast){
