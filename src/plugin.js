@@ -10,14 +10,14 @@ export default {
             if(currentToast){
                 currentToast.close();
             }
-            currentToast=createToast({
+            currentToast = createToast({
                 Vue,
                 message,
                 propsData: toastOptions,
-                onClose:()=>{
-                    currentToast=null;
+                onClose: () => {
+                    currentToast = null
                 }
-            });
+            })
         }
     }
 };
@@ -25,7 +25,7 @@ export default {
 
 
 /* helpers */
-function createToast(Vue,message,propsData,onClose){
+function createToast({Vue,message,propsData,onClose}){
     let Constructor =Vue.extend(Toast);
     let toast =new Constructor({propsData});
     toast.$slots.default=[message];
