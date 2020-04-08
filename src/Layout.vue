@@ -15,7 +15,7 @@
         },
         mounted(){
         this.$children.forEach((vm)=>{
-            if(vm.$options.name==='430sider'){
+            if(vm.$options.name==='sider430'){
                 this.layoutClass.hasSider=true;
             }
         })

@@ -1,13 +1,14 @@
 <template>
     <svg class="g-icon" >
-        <use :xlink:href=`#icon-${name}`></use>
+        <use :xlink:href="`#icon-${name}`"></use>
     </svg>
 </template>
 
 <script lang='ts'>
-    import './svg'
+    import'./svg.js'
     export default {
-        props:['name']
+        props:['name'],
+
     }
 </script>
 
