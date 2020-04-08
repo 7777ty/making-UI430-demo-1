@@ -1,4 +1,5 @@
 module.exports = {
+    base:'/UI430-website/',
     title: 'UI430',
     description: '一个好用的UI轮子',
     themeConfig: {

@@ -28,7 +28,7 @@
   },
   "name": "ui430",
   "description": "作者：7777ty",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev-test": "parcel watch test/* --no-cache & karma start",
